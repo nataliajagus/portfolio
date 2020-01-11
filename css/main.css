@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+label {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-grey {
+  background-color: #F6F6F7;
+  padding: 100px 0;
+}
+/*# sourceMappingURL=main.css.map */
