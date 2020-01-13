@@ -26,10 +26,22 @@ $green: #42D091;
 
 .page--top {
     position: relative;
-    overflow-x: hidden;
-    height: 100vh;
+    overflow: hidden;
+    height: 900px;
     background: #3f328b;
     background: linear-gradient(202deg, #3f328b 23%, #1049e1 87%);
+}
+
+.page--top:after {
+    content: '';
+    width: 100vw;
+    height: 100px;
+    background: url('../assets/overlay.svg');
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -209,6 +221,8 @@ nav {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    transition: all ease-in 0.3s;
 }
 
 .shape1 {
@@ -225,6 +239,16 @@ nav {
 
 .line {
     width: 50px;
+}
+
+.about {
+    background: #f6f6f7;
+}
+.section-overlay {
+    width: 100vw;
+    display: block;
+    margin-top: -100px;
+    position: absolute;
 }
 
 @media (min-width: 576px) { 
