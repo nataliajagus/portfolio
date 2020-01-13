@@ -46,6 +46,7 @@
   background-size: cover;
   position: absolute;
   bottom: 0;
+  z-index: 2;
 }
 
 nav {
@@ -224,6 +225,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 50px;
+  z-index: 2;
 }
 
 .hero--text p {
@@ -292,13 +294,6 @@ nav {
 
 .about {
   background: #f6f6f7;
-}
-
-.section-overlay {
-  width: 100vw;
-  display: block;
-  margin-top: -100px;
-  position: absolute;
 }
 
 @media (min-width: 768px) {
@@ -382,7 +377,14 @@ nav {
   }
   .shape2 {
     top: -20px;
-    right: 0px;
+    left: 1200px;
+  }
+  #scene {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
   }
   .line1 {
     top: 0;
@@ -390,19 +392,19 @@ nav {
   }
   .line2 {
     top: 250px;
-    right: 250px;
+    left: 800px;
   }
   .line3 {
     top: 280px;
-    right: 50%;
+    left: 1100px;
   }
   .line4 {
     top: 700px;
-    right: 20%;
+    left: 700px;
   }
   .line5 {
     top: 600px;
-    right: 55%;
+    left: 1200px;
   }
   .dots {
     top: 600px;
