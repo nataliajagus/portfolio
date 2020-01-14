@@ -22,28 +22,6 @@ const navSlide = () => {
 }
 navSlide();
 
-  
-let offerCards = document.querySelectorAll('.offer--box');
-let offerCardHeaders = document.querySelectorAll('.offer--header');
-
-offerCardHeaders.forEach(header => header.addEventListener("click", (e) => {
-    let offerCard = header.closest(".offer--box");
-
-    if(offerCard.offsetHeight < 450) {
-        offerCard.style.maxHeight = "450px";
-        offerCard.style.overflowY = "scroll";
-    } else if(window.innerWidth >= 427 && window.innerWidth <= 768) {
-        offerCard.style.maxHeight = "170px";
-        offerCard.style.overflow = "hidden";
-    } else if(window.innerWidth > 768) {
-        offerCard.style.maxHeight = "86px";
-        offerCard.style.overflow = "hidden";
-    } else {
-        offerCard.style.maxHeight = "140px";
-        offerCard.style.overflow = "hidden";
-    }
-
-}))
 
 const deleteLineBreak = () => {
     if(window.innerWidth <= 768) {
@@ -56,4 +34,16 @@ deleteLineBreak();
 
 window.addEventListener('resize', () => {
     deleteLineBreak();
+})
+
+let greenBox = document.querySelector('.offer--box__green');
+let whiteBox = document.querySelector('.offer--box__white');
+
+
+greenBox.addEventListener("click", function() {
+    this.classList.toggle('box-open');
+})
+
+whiteBox.addEventListener("click", function() {
+    this.classList.toggle('box-open');
 })

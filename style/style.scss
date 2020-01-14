@@ -264,6 +264,8 @@ nav {
     justify-content: center;
 }
 
+
+
 .offer--box {
     border-radius: 20px;
     box-shadow: 2px 5px 7px rgba(1, 1, 1, 0.12);
@@ -280,10 +282,6 @@ nav {
     transition: 0.2s ease-in all;
     height: 130px;
 
-
-        &:hover {
-            height: 100%;
-        }
 
     &:after {
         content: '';
@@ -329,6 +327,10 @@ nav {
 
 
 
+}
+
+.box-open {
+    height: 100%;
 }
 
 .offer_wrapper {
@@ -582,6 +584,12 @@ nav {
     
     .hero--text {
         justify-content: center;
+    }
+
+    .offer--box {
+        &:hover {
+            height: 100%;
+        }
     }
 }
 

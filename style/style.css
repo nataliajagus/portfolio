@@ -350,10 +350,6 @@ nav {
   height: 130px;
 }
 
-.offer--box:hover {
-  height: 100%;
-}
-
 .offer--box:after {
   content: '';
   height: 250px;
@@ -394,6 +390,10 @@ nav {
 
 .offer--box img {
   height: 40px;
+}
+
+.box-open {
+  height: 100%;
 }
 
 .offer_wrapper {
@@ -620,6 +620,9 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .offer--box:hover {
+    height: 100%;
   }
 }
 
