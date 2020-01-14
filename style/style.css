@@ -266,10 +266,8 @@ nav {
 .shape {
   position: absolute;
   z-index: 0;
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
-  -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   -webkit-transition: all ease-in 0.3s;
@@ -294,6 +292,104 @@ nav {
 
 .about {
   background: #f6f6f7;
+}
+
+.offer {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer .container {
+  position: absolute;
+  margin-top: -158px;
+}
+
+.offer--box {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 5px 7px rgba(1, 1, 1, 0.12);
+          box-shadow: 2px 5px 7px rgba(1, 1, 1, 0.12);
+  overflow: hidden;
+  padding: 42px 20px 20px 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  -webkit-transition: 0.2s ease-in all;
+  transition: 0.2s ease-in all;
+  height: 140px;
+}
+
+.offer--box:hover {
+  height: 100%;
+}
+
+.offer--box:after {
+  content: '';
+  height: 250px;
+  width: 200px;
+  background: url(../../assets/box-bg.svg) no-repeat;
+  display: block;
+  position: absolute;
+  bottom: -99px;
+  right: 0;
+  background-size: cover;
+}
+
+.offer--box h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: #041A5C;
+  margin-left: 50px;
+}
+
+.offer--box__green {
+  background: no-repeat right 120%, -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #8ad7bd), to(#02c969));
+  background: no-repeat right 120%, linear-gradient(90deg, #020024 0%, #8ad7bd 0%, #02c969 100%);
+}
+
+.offer--box__green h1 {
+  color: #fff;
+}
+
+.offer--box__white {
+  background: #fff;
+}
+
+.offer--box__white .offer_list li {
+  color: #041A5C;
+}
+
+.offer--box img {
+  height: 70px;
+}
+
+.offer_list {
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: -20px;
+  font-size: 1rem;
+}
+
+.offer_list li {
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -410,6 +506,12 @@ nav {
     top: 600px;
     width: 500px;
     left: -100px;
+  }
+  .offer-left {
+    padding-right: 15px;
+  }
+  .offer-right {
+    padding-left: 15px;
   }
 }
 

@@ -1,4 +1,5 @@
 $green: #42D091;
+$dark-blue: #041A5C;
 
 * {
     margin: 0px;
@@ -217,10 +218,8 @@ nav {
 .shape {
     position: absolute;
     z-index: 0;
-    user-drag: none; 
     user-select: none;
     -moz-user-select: none;
-    -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 
@@ -245,6 +244,94 @@ nav {
 
 .about {
     background: #f6f6f7;
+}
+
+.offer {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    
+    .container {
+        position: absolute;
+        margin-top: -158px;
+    }
+}
+
+.offer--box {
+    border-radius: 20px;
+    box-shadow: 2px 5px 7px rgba(1, 1, 1, 0.12);
+    overflow: hidden;
+    padding: 42px 20px 20px 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    transition: 0.2s ease-in all;
+    height: 140px;
+
+
+        &:hover {
+            height: 100%;
+        }
+
+    &:after {
+        content: '';
+        height: 250px;
+        width: 200px;
+        background: url(../../assets/box-bg.svg) no-repeat;
+        display: block;
+        position: absolute;
+        bottom: -99px;
+        right: 0;
+        background-size: cover;
+    }
+
+
+    h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        color: $dark-blue;
+        margin-left: 50px;
+    }
+
+    &__green {
+        background: no-repeat right 120%, linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(138, 215, 189, 1) 0%, rgba(2, 201, 105, 1) 100%);
+        h1 {
+            color: #fff;
+        }
+
+    }
+
+    &__white {
+        background: #fff;
+
+        .offer_list li {
+            color: #041A5C;
+        }
+    }
+
+    img {
+        height: 70px;
+    }
+
+
+
+}
+
+.offer_list {
+    list-style-type: none; 
+    margin-top: 30px;
+    margin-left: -20px;
+    font-size: 1rem;
+    
+    li {
+        color: #fff;
+    }
 }
 
 
@@ -380,6 +467,14 @@ nav {
         top: 600px;
         width: 500px;
         left: -100px;
+    }
+
+    .offer-left {
+        padding-right: 15px;
+    }
+
+    .offer-right {
+        padding-left: 15px;
     }
     
 
