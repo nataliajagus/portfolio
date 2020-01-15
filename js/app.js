@@ -41,7 +41,7 @@ let whiteBox = document.querySelector('.offer--box__white');
 
 
 greenBox.addEventListener("click", function() {
-    this.classList.toggle('box-open');
+    this.classList.toggle('box-open');  
 })
 
 whiteBox.addEventListener("click", function() {

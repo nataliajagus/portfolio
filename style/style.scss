@@ -7,7 +7,7 @@ $dark-blue: #041A5C;
     box-sizing: border-box;
     font-family: 'Maven Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -150,6 +150,7 @@ nav {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0px);
@@ -159,9 +160,11 @@ nav {
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
+
 .toggle .line2 {
     opacity: 0;
 }
+
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
@@ -244,13 +247,14 @@ nav {
 
 .about {
     background: #f6f6f7;
+    padding: 200px 0;
 }
 
 .offer {
     background: transparent;
     display: flex;
     justify-content: center;
-    
+
     .container {
         position: absolute;
         margin-top: -158px;
@@ -279,7 +283,8 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px 0;
-    transition: 0.2s ease-in all;
+    -webkit-transition: height 0.3s ease-in;
+    transition: height 0.3s ease-in;
     height: 130px;
 
 
@@ -307,6 +312,7 @@ nav {
 
     &__green {
         background: no-repeat right 120%, linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(138, 215, 189, 1) 0%, rgba(2, 201, 105, 1) 100%);
+
         h1 {
             color: #fff;
         }
@@ -329,8 +335,12 @@ nav {
 
 }
 
-.box-open {
-    height: 100%;
+.offer--box__white.box-open {
+    height: 400px;
+}
+
+.offer--box__green.box-open {
+    height: 550px;
 }
 
 .offer_wrapper {
@@ -338,14 +348,14 @@ nav {
 }
 
 .offer_list {
-    list-style-type: none; 
+    list-style-type: none;
     margin-top: 30px;
-    margin-left: -20px;
     font-size: 1rem;
-    
+
     li {
         color: #fff;
         margin-bottom: 5px;
+        text-align: center;
     }
 }
 
@@ -357,6 +367,7 @@ nav {
             margin-top: 0;
             text-align: left;
         }
+
         padding: 42px 20px 20px 40px;
 
         img {
@@ -369,14 +380,37 @@ nav {
         align-items: center;
         justify-content: center;
     }
-}
-@media (min-width: 576px) { 
 
- }
+    .offer_list {
+        li {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 576px) {}
 
 @media (min-width: 527px) and (max-width: 768px) {
     .page--top {
         height: 1000px;
+    }
+
+    .offer--box__white.box-open {
+        height: 250px;
+    }
+
+    .offer--box__green.box-open {
+        height: 300px;
+    }
+
+    .offer_wrapper {
+        flex-direction: row;
+    }
+
+    .offer--box {
+        .col-5 {
+            width: 50%;
+        }
     }
 }
 
@@ -396,7 +430,7 @@ nav {
             opacity: 1;
         }
     }
-    
+
     .burger {
         display: none;
     }
@@ -424,7 +458,7 @@ nav {
     .col-5 {
         width: 50%;
     }
-    
+
     .col-6 {
         width: 60%;
     }
@@ -465,7 +499,7 @@ nav {
         top: -20px;
         left: -93px;
     }
-    
+
     .shape2 {
         top: -20px;
         left: 1200px;
@@ -503,7 +537,7 @@ nav {
         top: 600px;
         left: 1200px;
     }
-    
+
     .dots {
         top: 600px;
         width: 500px;
@@ -529,6 +563,7 @@ nav {
     .page--top {
         height: auto;
     }
+
     .hero--wrapper {
         padding-top: 0;
     }
@@ -536,7 +571,22 @@ nav {
     .hero--text {
         justify-content: center;
     }
-    
+
+    .offer_list {
+        margin-left: -20px;
+    }
+
+    .offer--box__white.box-open {
+        height: 350px;
+    }
+
+    .offer--box__green.box-open {
+        height: 450px;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
 
 }
 
@@ -581,7 +631,7 @@ nav {
         font-size: 1.3rem;
         line-height: 1.5rem;
     }
-    
+
     .hero--text {
         justify-content: center;
     }
@@ -591,6 +641,8 @@ nav {
             height: 100%;
         }
     }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -603,15 +655,15 @@ nav {
 
         p {
             font-size: 1.618rem;
-            line-height: 2.2rem;   
+            line-height: 2.2rem;
         }
     }
-    
-    
+
+
     .hero--sub {
         font-size: 3.618rem;
     }
-    
+
     .hero--title {
         font-size: 6.536rem;
     }
@@ -631,7 +683,7 @@ nav {
     .hero--wrapper {
         padding-top: 100px;
     }
-    
+
 }
 
 @media (min-width: 1600px) {
