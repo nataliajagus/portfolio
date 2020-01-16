@@ -1,282 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Natalia Jaguś - Projekty graficzne, strony internetowe</title>
-    <script
-      src="https://kit.fontawesome.com/6ab26d21fa.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
 
-  <body>
-    <section class="page--top">
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <a href="#"
-              ><img
-                src="assets/logo.svg"
-                alt="Natalia Jaguś projektowanie graficzne"
-                class="page--logo img-fluid"
-            /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Natalia Jaguś - Projekty graficzne, strony internetowe</title>
+  <script src="https://kit.fontawesome.com/6ab26d21fa.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+    <link href="style/lightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <section class="page--top">
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="assets/logo.svg" alt="Natalia Jaguś projektowanie graficzne"
+              class="page--logo img-fluid" /></a>
+        </div>
+        <ul class="nav-links">
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#">oferta</a></li>
+          <li><a href="#">o mnie</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">kontakt</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="hero--wrapper">
+        <div class="row">
+          <div class="col-4 hero--text">
+            <span class="hero--sub">Cześć, jestem</span>
+            <span class="hero--title">Natalia</span>
+            <p>
+              Zajmuję się projektowaniem graficznym i stronami internetowymi
+            </p>
           </div>
-          <ul class="nav-links">
-            <li class="active"><a href="#">home</a></li>
-            <li><a href="#">oferta</a></li>
-            <li><a href="#">o mnie</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">kontakt</a></li>
-          </ul>
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+          <div class="col-6">
+            <img src="assets/nati.svg" alt="Natalia Jaguś" class="responsive" width="600" />
           </div>
-        </nav>
-        <div class="hero--wrapper">
-          <div class="row">
-            <div class="col-4 hero--text">
-              <span class="hero--sub">Cześć, jestem</span>
-              <span class="hero--title">Natalia</span>
+        </div>
+      </div>
+    </div>
+
+    <ul id="scene">
+      <li class="layer" data-depth="-.2">
+        <img src="assets/shape-1.svg" class="shape shape1" />
+      </li>
+      <li class="layer" data-depth=".2">
+        <img src="assets/shape-2.svg" class="shape shape2" />
+      </li>
+      <li class="layer" data-depth=".3">
+        <img src="assets/line.svg" class="shape line line1" />
+      </li>
+      <li class="layer" data-depth=".5">
+        <img src="assets/line.svg" class="shape line line2" />
+      </li>
+      <li class="layer" data-depth="-.8">
+        <img src="assets/line.svg" class="shape line line3" />
+      </li>
+      <li class="layer" data-depth="-1">
+        <img src="assets/line.svg" class="shape line line4" />
+      </li>
+      <li class="layer" data-depth="-0.3">
+        <img src="assets/line.svg" class="shape line line5" />
+      </li>
+      <li class="layer" data-depth=".6">
+        <img src="assets/shape-dots.svg" alt="" class="shape dots" />
+      </li>
+    </ul>
+  </section>
+
+  <section class="offer">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 offer-left">
+          <div class="offer--box offer--box__green">
+            <div class="row offer--header">
+              <img src="assets/design.svg" alt="" class="img-fluid" />
+              <h1>Projektowanie <br />graficzne</h1>
+            </div>
+            <div class="row offer_wrapper">
+              <div class="col-5">
+                <ul class="offer_list">
+                  <li>Logo, branding</li>
+                  <li>Wizytówki</li>
+                  <li>Ulotki, plakaty</li>
+                  <li>Papeteria firmowa</li>
+                  <li>Katalogi, foldery</li>
+                  <li>Grafiki na social media</li>
+                </ul>
+              </div>
+              <div class="col-5">
+                <ul class="offer_list">
+                  <li>Zaproszenia, vouchery</li>
+                  <li>Kalendarze</li>
+                  <li>Etykiety</li>
+                  <li>Banery, rollupy</li>
+                  <li>Reklama na auto</li>
+                  <li>I wiele więcej :)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 offer-right">
+          <div class="offer--box offer--box__white">
+            <div class="row offer--header">
+              <img src="assets/websites.svg" alt="" class="img-fluid" />
+              <h1>Strony <br />internetowe</h1>
+            </div>
+            <div class="row offer_wrapper">
+              <div class="col-5">
+                <ul class="offer_list">
+                  <li>Strony wizytówki</li>
+                  <li>Strony CMS Wordpress</li>
+                  <li>Sklepy internetowe</li>
+                  <li>Blogi</li>
+                </ul>
+              </div>
+              <div class="col-5">
+                <ul class="offer_list">
+                  <li>Projekty indywidualne</li>
+                  <li>lub budżetowe strony na szablonach</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h1 class="content_heading heading">Krótko o mnie</h1>
+          <p>
+            W branży jestem od urodzenia. Dosłownie. Znaczną część
+            dzieciństwa spędziłam w rodzinnej agencji i drukarni, gdzie
+            poznawałam tajniki sztuki reklamowej i poligrafii.
+            Projektowaniem graficznym zjamuję się od ponad 6 lat,
+            przez ten czas obsługiwałam klientów z przeróżnych branży
+            - beauty, restauracje, hotele, firmy budowlane,
+            transportowe, kluby fitness, stowarzyszenia, itd.
+            Robię takie projekty, które spodobają się Tobie, Twoim
+            klientom, sąsiadowi i szwagrowi.
+          </p>
+          <a href="#" class="green_btn">Więcej</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 dotted">
+          <h2 class="dotted_heading heading">Czego możesz<br /> się spodziewać?</h2>
+        </div>
+        <div class="col-5">
+          <div class="feature_row">
+            <img src="assets/time.svg" alt="">
+            <div class="div">
+              <h3>Dotrzymanego terminu</h3>
               <p>
-                Zajmuję się projektowaniem graficznym i stronami internetowymi
+                To coś, o co nie łatwo w tej branży :)
+                Możesz być spokojny, że swoje projekty
+                dostaniesz na czas, a nawet wcześniej.
               </p>
             </div>
-            <div class="col-6">
-              <img
-                src="assets/nati.svg"
-                alt="Natalia Jaguś"
-                class="responsive"
-                width="600"
-              />
+          </div>
+          <div class="feature_row">
+            <img src="assets/check.svg" alt="">
+            <div>
+              <h3>Kompleksowej obsługi</h3>
+              <p>
+                Oprócz zaprojektowania materiałów
+                mogę skoordynować Twoje zamówienie
+                w drukarni.
+              </p>
+            </div>
+          </div>
+          <div class="feature_row">
+            <img src="assets/heart.svg" alt="">
+            <div>
+              <h3>Pełnego zaangażowania</h3>
+              <p>
+                Do każdego zlecenia podchodzę
+                z dużą starannością, bo cenię
+                sobie dane mi zaufanie.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <ul id="scene">
-        <li class="layer" data-depth="-.2">
-          <img src="assets/shape-1.svg" class="shape shape1" />
-        </li>
-        <li class="layer" data-depth=".2">
-          <img src="assets/shape-2.svg" class="shape shape2" />
-        </li>
-        <li class="layer" data-depth=".3">
-          <img src="assets/line.svg" class="shape line line1" />
-        </li>
-        <li class="layer" data-depth=".5">
-          <img src="assets/line.svg" class="shape line line2" />
-        </li>
-        <li class="layer" data-depth="-.8">
-          <img src="assets/line.svg" class="shape line line3" />
-        </li>
-        <li class="layer" data-depth="-1">
-          <img src="assets/line.svg" class="shape line line4" />
-        </li>
-        <li class="layer" data-depth="-0.3">
-          <img src="assets/line.svg" class="shape line line5" />
-        </li>
-        <li class="layer" data-depth=".6">
-          <img src="assets/shape-dots.svg" alt="" class="shape dots" />
-        </li>
-      </ul>
-    </section>
-
-    <section class="offer">
-      <div class="container">
-        <div class="row">
-          <div class="col-5 offer-left">
-            <div class="offer--box offer--box__green">
-              <div class="row offer--header">
-                <img src="assets/design.svg" alt="" class="img-fluid" />
-                <h1>Projektowanie <br />graficzne</h1>
-              </div>
-              <div class="row offer_wrapper">
-                <div class="col-5">
-                  <ul class="offer_list">
-                    <li>Logo, branding</li>
-                    <li>Wizytówki</li>
-                    <li>Ulotki, plakaty</li>
-                    <li>Papeteria firmowa</li>
-                    <li>Katalogi, foldery</li>
-                    <li>Grafiki na social media</li>
-                  </ul>
-                </div>
-                <div class="col-5">
-                  <ul class="offer_list">
-                    <li>Zaproszenia, vouchery</li>
-                    <li>Kalendarze</li>
-                    <li>Etykiety</li>
-                    <li>Banery, rollupy</li>
-                    <li>Reklama na auto</li>
-                    <li>I wiele więcej :)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-5 offer-right">
-            <div class="offer--box offer--box__white">
-              <div class="row offer--header">
-                <img src="assets/websites.svg" alt="" class="img-fluid" />
-                <h1>Strony <br />internetowe</h1>
-              </div>
-              <div class="row offer_wrapper">
-                <div class="col-5">
-                  <ul class="offer_list">
-                    <li>Strony wizytówki</li>
-                    <li>Strony CMS Wordpress</li>
-                    <li>Sklepy internetowe</li>
-                    <li>Blogi</li>
-                  </ul>
-                </div>
-                <div class="col-5">
-                  <ul class="offer_list">
-                    <li>Projekty indywidualne</li>
-                    <li>lub budżetowe strony na szablonach</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="center">Zobacz co ostatnio wyczarowałam <br />ze swoimi Klientami</h2>
+      <div class="row">
+        <div class="col-3">
+            <a href="https://place-hold.it/1200x700" data-lightbox="image-1" data-title="My caption"><img src="https://place-hold.it/700x700" alt=""></a>
+        </div>
+        <div class="col-3">
+            <a href="https://place-hold.it/1200x700" data-lightbox="image-2" data-title="My caption"><img src="https://place-hold.it/700x700" alt=""></a>
+        </div>
+        <div class="col-3">
+            <a href="https://place-hold.it/1200x700" data-lightbox="image-3" data-title="My caption"><img src="https://place-hold.it/700x700" alt=""></a>
         </div>
       </div>
-    </section>
+      <a href="#" class="green_btn m-auto">Więcej realizacji</a>
+    </div>
+  </section>
 
-    <section class="about">
-      <div class="container">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A blanditiis
-          officiis obcaecati ipsa sed! Delectus quaerat autem laboriosam sequi
-          ipsum reprehenderit, at sapiente omnis in aspernatur inventore ducimus
-          ab eveniet veniam nostrum soluta et aliquam consequatur laudantium
-          porro. Temporibus quidem nisi omnis suscipit. Praesentium deleniti,
-          ipsa autem enim quos sunt perspiciatis asperiores voluptates voluptate
-          soluta tempore dicta dolorem pariatur obcaecati ea? Facilis
-          repellendus eos nam totam tenetur aliquid rem deserunt praesentium
-          odio aperiam! Delectus accusantium rerum deserunt pariatur corrupti,
-          facere eos repellendus quisquam ipsam laboriosam repudiandae
-          recusandae sapiente eius est quod similique sequi tenetur dolorum?
-          Voluptatum nostrum dolore minus eius. Odio aspernatur magni aliquid
-          placeat aperiam natus sapiente, tempore, quos in accusamus, impedit
-          amet architecto! Voluptatum quo dignissimos nisi nulla, est totam,
-          aliquam voluptas labore, vero ea dicta vitae itaque iste porro at!
-          Ducimus rerum quos ipsam amet accusamus consequatur sapiente
-          laboriosam quia, cumque facere dolores esse, corrupti ex quod libero,
-          vitae quidem iure eveniet! Tempore quidem et atque consequatur magni
-          veniam neque at facere natus adipisci alias accusantium repudiandae
-          dolore minus totam qui magnam beatae mollitia culpa reiciendis
-          blanditiis, labore soluta maiores? Accusantium sint praesentium
-          assumenda quo! Praesentium earum veniam magni ullam, nisi deserunt
-          necessitatibus! Iure maiores, non at cumque exercitationem enim dolor
-          placeat praesentium odio tenetur provident ipsam nobis similique
-          aliquam facere, odit esse officia cum eveniet quas, ratione molestias
-          minus perspiciatis inventore! Temporibus maxime assumenda
-          necessitatibus. Tenetur impedit consequuntur deleniti, dolore optio
-          vero iure iste facere, at asperiores ex tempore omnis ut, velit
-          laborum? Corporis ratione fugiat et unde quis omnis porro vel dicta
-          culpa amet eum quo iste, veniam consequuntur animi recusandae id
-          officiis quod cupiditate quaerat dolor ut quae nobis. Nam,
-          perspiciatis saepe culpa quidem officia aliquid laborum ad nihil illo,
-          quisquam natus id ducimus voluptatibus dicta. Deleniti consectetur
-          quae architecto culpa blanditiis similique repellendus sit commodi
-          quasi? Tempore eum laudantium reiciendis praesentium labore! Et
-          officia tempora eius eligendi corrupti ducimus sapiente odio!
-          Laboriosam vel quisquam sunt sint ea saepe ipsam praesentium
-          consectetur quibusdam repellat nostrum tempore quam excepturi ducimus
-          delectus aut reiciendis nulla ratione, beatae quod doloremque voluptas
-          reprehenderit libero. Laboriosam saepe dolor ut corporis officia
-          eligendi rem veritatis repellendus enim voluptate repudiandae in
-          dignissimos, voluptas, explicabo modi beatae magnam ea natus alias
-          numquam aperiam possimus. Corporis eum accusamus culpa, similique
-          perferendis inventore, mollitia animi provident at aperiam aut ipsum
-          laborum eos quae error, est placeat! Minus blanditiis, amet fugit nisi
-          eligendi sint reprehenderit odit maiores deserunt sequi nam id labore
-          ipsa expedita quaerat dolorem rem libero voluptates repellat inventore
-          nostrum at veritatis? Vel, eaque quasi illo iusto nam voluptas labore
-          et natus temporibus ipsum autem itaque quo porro numquam eos nobis
-          quis repudiandae maiores cum consequuntur omnis, dolorum veritatis.
-          Nihil doloribus expedita temporibus voluptatum aliquam saepe, quo
-          illum excepturi non, perspiciatis culpa ab veniam officia tempore
-          harum. Provident ad expedita minus doloribus quod commodi incidunt
-          rem, illo ipsam debitis reprehenderit corporis, enim unde! Ipsa earum
-          vel iusto perferendis quos. Repellat pariatur molestiae esse, harum
-          totam itaque nostrum animi tenetur fugit dolore eius hic ullam non
-          corrupti qui assumenda sed sint aut dolorem blanditiis provident.
-          Quaerat voluptatem minus facilis soluta voluptatum, est esse
-          consequuntur incidunt, aliquid laboriosam reiciendis, blanditiis
-          praesentium molestias quidem! Consequuntur distinctio, modi iste
-          tempore iure exercitationem id tempora voluptatibus? Expedita, nam
-          similique id atque neque officia placeat? Quam atque cumque ad velit
-          culpa reprehenderit impedit, unde pariatur excepturi deserunt sit
-          dolor corporis veniam iusto earum ab magnam, saepe esse quas. Quasi
-          dolores consequuntur dignissimos possimus sequi vero similique
-          adipisci, ea laboriosam tempore sapiente saepe aperiam aliquid quaerat
-          labore atque ratione. Sit minus, dolorum officia labore nisi doloribus
-          nihil veniam nemo quaerat asperiores vitae repellat deserunt et.
-          Dolorum tenetur autem ipsum natus cumque iure, assumenda dicta. Ipsum
-          et dolorum deleniti tempora atque officiis autem quo debitis
-          perferendis voluptatem laudantium praesentium sequi quae aliquid,
-          dignissimos aliquam ullam voluptatibus architecto unde quam modi
-          commodi odit! Quo pariatur voluptas eos facilis, ipsa quis voluptatum
-          ut hic quia unde! Temporibus voluptatibus earum velit autem, nemo qui
-          dolorem quod corrupti magnam ullam numquam necessitatibus excepturi
-          eos illum delectus alias. Mollitia, enim, non esse quos, voluptatibus
-          eaque unde accusantium aut voluptas maxime laboriosam soluta dolores
-          error aperiam minus veniam at eum totam omnis voluptate consectetur
-          asperiores ullam. Culpa aspernatur dolorem quibusdam optio iste, error
-          laudantium dignissimos voluptate molestiae saepe eius quia quos odit,
-          autem distinctio officiis cumque explicabo quo eos in maxime. Quis
-          tempore, doloribus id hic nam itaque inventore dolorum quasi numquam
-          laboriosam minima alias suscipit repellendus ab cupiditate assumenda
-          fuga nihil corporis recusandae. Adipisci fuga alias nesciunt velit at
-          minima quia esse nihil a dicta! Quos, non obcaecati ipsa blanditiis
-          cupiditate debitis aspernatur culpa perferendis deserunt quo
-          dignissimos explicabo, dolores recusandae tempora repellat tempore
-          delectus sequi adipisci autem, temporibus nihil neque. Quas asperiores
-          error voluptates modi voluptatem? Vero culpa accusamus fugiat dicta
-          hic ex incidunt officiis dolorem, obcaecati deserunt optio quae.
-          Accusamus deserunt officiis consectetur quod iusto adipisci explicabo,
-          nostrum ducimus dolorum, non velit ut soluta debitis modi. Odio
-          voluptates mollitia sunt optio velit labore? Repellendus beatae
-          delectus quae facilis, animi accusantium possimus ipsa exercitationem
-          tempora. Cumque blanditiis temporibus in dignissimos molestiae illo,
-          consequatur natus laudantium ducimus? Voluptas repudiandae illo vel
-          quisquam impedit cumque cupiditate dolorem hic nihil, aperiam vitae
-          totam aliquam architecto cum rerum? Eaque excepturi a numquam quidem
-          delectus veniam corrupti, eligendi qui minima ullam esse voluptatum.
-          Repellat architecto necessitatibus earum quos odio tempora, vel,
-          quibusdam quas libero possimus, omnis odit soluta exercitationem
-          labore. Veniam, iste dolorem fugiat eum nobis maxime sint quo
-          voluptatum temporibus? Assumenda nostrum aliquam quod et. Quasi rerum
-          eum illum quae accusantium unde culpa veniam fugit dolores,
-          perspiciatis, hic ex nisi quod consequatur veritatis adipisci!
-          Possimus cupiditate ad ut dicta ipsam consequuntur magni iste modi
-          expedita inventore, labore dignissimos eveniet ea incidunt nostrum
-          placeat nobis, reprehenderit nam saepe! Voluptas cupiditate excepturi
-          rem ut velit ratione obcaecati sint accusantium. Exercitationem
-          necessitatibus quaerat maiores dolorum modi sapiente fugit, culpa non
-          quis perferendis mollitia nam velit aut sint reprehenderit sit
-          voluptate harum quia fugiat similique minima! Repellat aspernatur sit
-          amet sapiente officia quis.
-        </p>
+  <footer class="page--footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <h2 class="white_heading">Stwórzmy razem <br />coś ciekawego!</h2>
+        </div>
+        <div class="col-5">
+          <p class="email">hello@nataliajagus.com</p>
+          <p class="phone">+48 511 33 11 22</p>
+        </div>
       </div>
-    </section>
-  </body>
-  <script src="js/app.js"></script>
-  <script src="js/parallax.js"></script>
-  <script>
-    if (window.innerWidth > 768) {
-      var scene = document.getElementById("scene");
-      var parallax = new Parallax(scene);
-    }
-  </script>
+    </div>
+    <p class="copyright">Copyright &copy; 2020 Natalia Jaguś | Wszelkie prawa zastrzeżone</p>
+  </footer>
+</body>
+<script src="js/app.js"></script>
+<script src="js/parallax.js"></script>
+<script>
+  if (window.innerWidth > 768) {
+    var scene = document.getElementById("scene");
+    var parallax = new Parallax(scene);
+  }
+</script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="js/lightbox.js"></script>
+
 </html>
