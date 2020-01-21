@@ -1,0 +1,28 @@
+.offer--page {
+    .about,
+    .grey_bottom {
+        .col-5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+        }
+    }
+    .grey_bottom {
+        padding-bottom: 100px;
+    }
+}
+
+.offer_design {
+    .col-5:first-child {
+        order: 2;
+    }
+}
+
+
+.offer_websites {
+    .col-5:first-child {
+        order: 2;
+    }
+}
+

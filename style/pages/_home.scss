@@ -1,0 +1,246 @@
+
+.about {
+    background: #f6f6f7;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.grey_bottom {
+    background: #f6f6f7;
+    position: relative;
+    padding-bottom: 200px;
+
+    &:after {
+        content: '';
+        width: 100vw;
+        height: 100px;
+        background: url('../assets/white-overlay.svg');
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+}
+
+.white_top {
+    position: relative;
+    &:after {
+        content: '';
+        width: 100vw;
+        height: 117px;
+        background: url('../assets/green-overlay.svg');
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+}
+
+.offer {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        position: absolute;
+        margin-top: -158px;
+    }
+}
+
+.offer--header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.offer--box {
+    border-radius: 20px;
+    box-shadow: 2px 5px 7px rgba(1, 1, 1, 0.12);
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    -webkit-transition: height 0.3s ease-in;
+    transition: height 0.3s ease-in;
+    height: 130px;
+
+
+    &:after {
+        content: '';
+        height: 250px;
+        width: 200px;
+        background: url(../assets/box-bg.svg) no-repeat;
+        display: block;
+        position: absolute;
+        bottom: -99px;
+        right: 0;
+        background-size: cover;
+    }
+
+
+    h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: $dark-blue;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    &__green {
+        background: no-repeat right 120%, linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(138, 215, 189, 1) 0%, rgba(2, 201, 105, 1) 100%);
+
+        h1 {
+            color: #fff;
+        }
+
+    }
+
+    &__white {
+        background: #fff;
+
+        .offer_list li {
+            color: #041A5C;
+        }
+    }
+
+    img {
+        height: 40px;
+    }
+
+
+
+}
+
+.offer--box__white.box-open {
+    height: 400px;
+}
+
+.offer--box__green.box-open {
+    height: 550px;
+}
+
+.offer_wrapper {
+    width: 100%;
+}
+
+.offer_list {
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 1rem;
+
+    li {
+        color: #fff;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+.heading {
+    font-size: 1.7rem;
+    margin-bottom: 35px;
+    color: $dark-blue;
+    position: relative;
+    &:after {
+        content: '';
+        height: 5px;
+        width: 100px;
+        background: #42D091;
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        border-radius: 80px;
+    }
+}
+
+.content_heading {
+    &:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+.green_btn:hover { 
+    border: 1px solid $green;
+    background-color: transparent;
+    color: $green;
+}
+
+.dotted {
+    background: url('../assets/dots-grey.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 300px;
+}
+
+.grey_bottom .col-5:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dotted_heading {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.feature_row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    
+
+    h3 {
+        text-transform: uppercase;
+        margin: 15px 0;
+    }
+
+    &:nth-child(2) {
+        margin: 50px 0;
+    }
+}
+
+.white_top {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    img {
+        border-radius: 30px;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        font-size: 1.5rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
