@@ -2,7 +2,7 @@
 .page--top {
     position: relative;
     overflow: hidden;
-    height: 900px;
+    height: auto;
     background: #3f328b;
     background: linear-gradient(202deg, #3f328b 23%, #1049e1 87%);
 }
@@ -146,9 +146,14 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
-
 .hero--wrapper {
     padding: 50px 0;
+
+    .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .hero--text {

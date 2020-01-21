@@ -130,9 +130,7 @@
         width: 90%;
     }
 
-    .hero--wrapper {
-        padding: 100px 0;
-    }
+
 
     .hero--sub,
     .hero--text p,
@@ -329,6 +327,24 @@
         }
     }
 
+    .offer--page {
+        .about {
+            .col-5 {
+                padding: 50px;
+            }
+
+            img {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+
+    .hero--wrapper {
+        padding: 50px 0 200px 0;
+    }
+    
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -454,6 +470,10 @@
 
     .feature_row {
         padding-left: 100px;
+    }
+
+    .page--top {
+        height: 1000px;
     }
 
 }

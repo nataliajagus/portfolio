@@ -12,6 +12,16 @@
     .white_top {
         padding-top: 50px;
     }
-}
- 
 
+    .about,
+    .grey_bottom {
+        .col-5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .grey_bottom {
+        padding-bottom: 100px;
+    }
+}

@@ -1,7 +1,7 @@
 .page--top {
   position: relative;
   overflow: hidden;
-  height: 900px;
+  height: auto;
   background: #3f328b;
   background: linear-gradient(202deg, #3f328b 23%, #1049e1 87%);
 }
@@ -184,6 +184,18 @@ nav {
 
 .hero--wrapper {
   padding: 50px 0;
+}
+
+.hero--wrapper .col-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero--text {
@@ -714,8 +726,8 @@ h1, h2, h3, h4, h5 {
   padding-top: 50px;
 }
 
-.offer--page .about .col-5,
-.offer--page .grey_bottom .col-5 {
+.subpage .about .col-5,
+.subpage .grey_bottom .col-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,10 +738,9 @@ h1, h2, h3, h4, h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px;
 }
 
-.offer--page .grey_bottom {
+.subpage .grey_bottom {
   padding-bottom: 100px;
 }
 
@@ -743,6 +754,48 @@ h1, h2, h3, h4, h5 {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.offer-page .about .row {
+  margin: 100px 0;
+}
+
+.offer-page .about .row:last-child {
+  margin-bottom: 0;
+}
+
+.offer-page .about img {
+  margin-bottom: 20px;
+}
+
+.about_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hobbies .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+
+.hobbies img {
+  margin-bottom: 50px;
 }
 
 .contact--page {
@@ -879,9 +932,6 @@ h1, h2, h3, h4, h5 {
   }
   .col-9 {
     width: 90%;
-  }
-  .hero--wrapper {
-    padding: 100px 0;
   }
   .hero--sub,
   .hero--text p,
@@ -1047,6 +1097,15 @@ h1, h2, h3, h4, h5 {
         -ms-flex-order: 0;
             order: 0;
   }
+  .offer--page .about .col-5 {
+    padding: 50px;
+  }
+  .offer--page .about img {
+    margin-bottom: 0px;
+  }
+  .hero--wrapper {
+    padding: 50px 0 200px 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1158,6 +1217,9 @@ h1, h2, h3, h4, h5 {
   }
   .feature_row {
     padding-left: 100px;
+  }
+  .page--top {
+    height: 1000px;
   }
 }
 
