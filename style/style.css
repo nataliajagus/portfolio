@@ -756,15 +756,15 @@ h1, h2, h3, h4, h5 {
           order: 2;
 }
 
-.offer-page .about .row {
+.offer--page .about .row {
   margin: 100px 0;
 }
 
-.offer-page .about .row:last-child {
+.offer--page .about .row:last-child {
   margin-bottom: 0;
 }
 
-.offer-page .about img {
+.offer--page .about img {
   margin-bottom: 20px;
 }
 
