@@ -78,7 +78,8 @@ nav {
     position: relative;
 }
 
-.nav-links li:after {
+.nav-links li:after,
+.category--button:after {
     content: '';
     height: 3px;
     width: 100%;
@@ -93,7 +94,8 @@ nav {
 }
 
 
-.active::after {
+.active::after,
+.category--button__active:after  {
     content: '';
     height: 3px;
     width: 100%;

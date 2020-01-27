@@ -92,7 +92,8 @@ nav {
   position: relative;
 }
 
-.nav-links li:after {
+.nav-links li:after,
+.category--button:after {
   content: '';
   height: 3px;
   width: 100%;
@@ -108,7 +109,8 @@ nav {
   transition: all 0.5s ease;
 }
 
-.active::after {
+.active::after,
+.category--button__active:after {
   content: '';
   height: 3px;
   width: 100%;
@@ -388,6 +390,10 @@ h1, h2, h3, h4, h5 {
 
 .right {
   text-align: right;
+}
+
+.relative {
+  position: relative;
 }
 
 .container {
@@ -798,6 +804,146 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 50px;
 }
 
+.portfolio--page .page--top:after {
+  background-image: url("../assets/white-overlay.svg");
+}
+
+.category--button {
+  border: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #041A5C;
+  background: none;
+  margin: 15px;
+}
+
+.category--button__active {
+  position: relative;
+}
+
+.category--button:hover {
+  cursor: pointer;
+}
+
+.categories {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio--elements {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio--element {
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.portfolio--element img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio--desc {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio--desc small {
+  color: #42D091;
+}
+
+.portfolio--desc strong {
+  color: #fff;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: #42D091;
+  opacity: .5;
+  position: absolute;
+}
+
+.next,
+.prev {
+  color: #42D091;
+  position: absolute;
+  right: -20px;
+  font-size: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  max-width: 50px;
+}
+
+.prev {
+  left: -20px;
+}
+
+.carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-height: 700px;
+}
+
+.technologies {
+  margin: 50px 0 25px 0;
+}
+
+.technologies img {
+  max-width: 50px;
+}
+
+.website--single p {
+  text-align: center;
+}
+
+.website--single .col-5:nth-child(2) {
+  margin-top: 50px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact--page {
   background: #42D091;
 }
@@ -914,6 +1060,9 @@ h1, h2, h3, h4, h5 {
   }
   .col-3 {
     width: 30%;
+  }
+  .col-33 {
+    width: 33.3333%;
   }
   .col-4 {
     width: 40%;
@@ -1105,6 +1254,15 @@ h1, h2, h3, h4, h5 {
   }
   .hero--wrapper {
     padding: 50px 0 200px 0;
+  }
+  .website--single .col-5:nth-child(2) {
+    padding: 0 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .website--single .col-5:nth-child(2) p {
+    text-align: left;
   }
 }
 

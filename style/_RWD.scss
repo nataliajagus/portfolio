@@ -106,6 +106,10 @@
         width: 30%;
     }
 
+
+    .col-33 {
+        width: 33.3333%;
+    }
     .col-4 {
         width: 40%;
     }
@@ -342,6 +346,17 @@
 
     .hero--wrapper {
         padding: 50px 0 200px 0;
+    }
+
+    .website--single {
+        .col-5:nth-child(2) {
+            padding: 0 50px;
+            align-items: flex-start;
+            
+            p {
+                text-align: left;
+            }
+        }
     }
     
 
