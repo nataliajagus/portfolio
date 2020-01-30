@@ -1,12 +1,12 @@
 const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    const pageTop = document.querySelector('.page--top');
+    const burger = document.querySelector('.nav__burger');
+    const nav = document.querySelector('.nav__links');
+    const navLinks = document.querySelectorAll('.nav__links li');
+    const pageTop = document.querySelector('.top');
 
 
     burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
+        nav.classList.toggle('nav--active');
         pageTop.classList.toggle('expand');
 
         navLinks.forEach((link, index) => {
@@ -27,8 +27,8 @@ navSlide();
 if (document.querySelector('body').classList.contains("index")) {
     const deleteLineBreak = () => {
         if (window.innerWidth <= 768) {
-            document.querySelector('.offer--box__green h1').innerHTML = 'Projektowanie graficzne';
-            document.querySelector('.offer--box__white h1').innerHTML = 'Strony internetowe';
+            document.querySelector('.offer__box--green h1').innerHTML = 'Projektowanie graficzne';
+            document.querySelector('.offer__box--white h1').innerHTML = 'Strony internetowe';
         }
     }
 
@@ -38,8 +38,8 @@ if (document.querySelector('body').classList.contains("index")) {
         deleteLineBreak();
     })
 
-    let greenBox = document.querySelector('.offer--box__green');
-    let whiteBox = document.querySelector('.offer--box__white');
+    let greenBox = document.querySelector('.offer__box--green');
+    let whiteBox = document.querySelector('.offer__box--white');
 
 
     greenBox.addEventListener("click", function () {
@@ -60,4 +60,35 @@ if (document.querySelector('body').classList.contains("website--single")) {
         });
     });
 }
+
+const msnry = new Macy({
+    container: '.gallery',
+    mobileFirst: true,
+    columns: 1,
+    breakAt: {
+      700: 3,
+      1100: 4,
+    },
+    margin: {
+      x: 0,
+      y: 0,
+    }
+  })
+
+
+
+
+
+
+  // init Isotope
+var $grid = $('.grid').isotope({
+    // options
+  });
+  // filter items on button click
+  $('.categories').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    $('.category__button').removeClass('category__button--active');
+    $(this).toggleClass('category__button--active');
+  });
 

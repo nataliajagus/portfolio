@@ -5,7 +5,7 @@
 }
 
 @media (min-width: 470px) {
-    .offer--box {
+    .offer__box {
         h1 {
             font-size: 1.5rem;
             margin-left: 40px;
@@ -20,13 +20,13 @@
         }
     }
 
-    .offer--header {
+    .offer__header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
-    .offer_list {
+    .offer__list {
         li {
             text-align: left;
         }
@@ -37,19 +37,19 @@
 
 @media (min-width: 527px) and (max-width: 768px) {
 
-    .offer--box__white.box-open {
+    .offer__box--white.box-open {
         height: 250px;
     }
 
-    .offer--box__green.box-open {
+    .offer__box--green.box-open {
         height: 300px;
     }
 
-    .offer_wrapper {
+    .offer__wrapper {
         flex-direction: row;
     }
 
-    .offer--box {
+    .offer__box {
         .col-5 {
             width: 50%;
         }
@@ -70,7 +70,7 @@
 }
 
 @media (min-width: 768px) {
-    .nav-links {
+    .nav__links {
         display: flex;
         justify-content: space-around;
         position: relative;
@@ -86,7 +86,7 @@
         }
     }
 
-    .burger {
+    .nav__burger {
         display: none;
     }
 
@@ -136,13 +136,13 @@
 
 
 
-    .hero--sub,
-    .hero--text p,
-    .hero--title {
+    .hero__sub,
+    .hero__text p,
+    .hero__title {
         text-align: left;
     }
 
-    .hero--text {
+    .hero__text {
         align-items: flex-start;
 
         p {
@@ -201,15 +201,15 @@
         left: -100px;
     }
 
-    .offer-left {
+    .offer__left {
         padding-right: 15px;
     }
 
-    .offer-right {
+    .offer__right {
         padding-left: 15px;
     }
 
-    .offer--box {
+    .offer__box {
         h1 {
             font-size: 1.2rem;
             margin-left: 40px;
@@ -217,27 +217,27 @@
 
     }
 
-    .page--top {
+    .top {
         height: auto;
     }
 
-    .hero--wrapper {
+    .hero {
         padding-top: 0;
     }
 
-    .hero--text {
+    .hero__text {
         justify-content: center;
     }
 
-    .offer_list {
+    .offer__list {
         margin-left: -20px;
     }
 
-    .offer--box__white.box-open {
+    .offer__box--white.box-open {
         height: 350px;
     }
 
-    .offer--box__green.box-open {
+    .offer__box--green.box-open {
         height: 450px;
     }
 
@@ -270,7 +270,7 @@
         margin-left: 70px;
     }
 
-    .feature_row {
+    .feature__row {
         flex-direction: row;
         justify-content: flex-start;
         text-align: left;
@@ -297,11 +297,11 @@
         font-size: 2.5rem;
     }
 
-    .page--footer p {
+    .footer p {
         justify-content: flex-start;
     }
 
-    .page--footer {
+    .footer {
     
         .col-5 {
             min-height: 200px;
@@ -314,24 +314,24 @@
         }
     }
 
-    .subpage .page--top {
+    .subpage .top {
         min-height: 300px;
     }
 
-    .offer_design {
+    .offer__design {
         .col-5:first-child {
             order: 0;
         }
     }
     
     
-    .offer_websites {
+    .offer__websites {
         .col-5:first-child {
             order: 0;
         }
     }
 
-    .offer--page {
+    .page--offer {
         .about {
             .col-5 {
                 padding: 50px;
@@ -344,7 +344,7 @@
     }
 
 
-    .hero--wrapper {
+    .hero {
         padding: 50px 0 200px 0;
     }
 
@@ -363,7 +363,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-    .offer--box {
+    .offer__box {
         height: 130px;
     }
 }
@@ -374,7 +374,7 @@
         max-width: 992px;
     }
 
-    .offer--box {
+    .offer__box {
         h1 {
             font-size: 1.7rem;
             margin-left: 50px;
@@ -387,28 +387,28 @@
         height: 140px;
     }
 
-    .offer--header {
+    .offer__header {
         width: auto;
     }
 
-    .hero--sub {
+    .hero__sub {
         font-size: 3rem;
     }
 
-    .hero--title {
+    .hero__title {
         font-size: 5.8rem;
     }
 
-    .hero--text p {
+    .hero__text p {
         font-size: 1.3rem;
         line-height: 1.5rem;
     }
 
-    .hero--text {
+    .hero__text {
         justify-content: center;
     }
 
-    .offer--box {
+    .offer__box {
         &:hover {
             height: 100%;
         }
@@ -442,7 +442,7 @@
         }
     }
 
-    .page--footer p {
+    .footer p {
         font-size: 2rem;
     }
 }
@@ -452,7 +452,7 @@
         max-width: 1140px;
     }
 
-    .hero--text {
+    .hero__text {
         margin-top: 50px;
 
         p {
@@ -462,39 +462,39 @@
     }
 
 
-    .hero--sub {
+    .hero__sub {
         font-size: 3.618rem;
     }
 
-    .hero--title {
+    .hero__title {
         font-size: 6.536rem;
     }
 
-    .hero--title:after {
+    .hero__title:after {
         bottom: 21px;
     }
 
-    .offer--box {
+    .offer__box {
         padding: 42px 20px 20px 70px;
     }
 
 
-    .hero--wrapper {
+    .hero__wrapper {
         padding-top: 100px;
     }
 
-    .feature_row {
+    .feature__row {
         padding-left: 100px;
     }
 
-    .page--top {
+    .top {
         height: 1000px;
     }
 
 }
 
 @media (min-width: 1600px) {
-    .nav-links {
+    .nav__links {
         width: 30%;
     }
 }

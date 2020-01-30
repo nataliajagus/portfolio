@@ -58,6 +58,8 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
 }
 
+button:focus {outline:0;}
+
 .white_heading {
     color: #fff;
     font-size: 2rem;
