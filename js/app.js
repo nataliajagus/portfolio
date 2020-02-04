@@ -72,7 +72,8 @@ const msnry = new Macy({
     margin: {
       x: 0,
       y: 0,
-    }
+    },
+    waitForImages: true
   })
 
 
