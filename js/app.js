@@ -77,6 +77,10 @@ const msnry = new Macy({
   })
 
 
+  msnry.runOnImageLoad(function () {
+    msnry.recalculate(true);
+  }, true);
+
 
 
 
