@@ -442,6 +442,19 @@ button:focus {
   border: 1px solid transparent;
 }
 
+.not-found .white_top {
+  text-align: center;
+}
+
+.not-found .white_top h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.not-found .white_top p {
+  font-size: 1.2rem;
+}
+
 .about {
   background: #f6f6f7;
   padding-top: 250px;
@@ -777,6 +790,12 @@ button:focus {
 
 .page--offer .about img {
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .page--offer .about .row {
+    margin: 20px 0;
+  }
 }
 
 .about__photo {
