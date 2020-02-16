@@ -40,6 +40,7 @@ nav {
 
 .nav__logo {
   padding: 20px 0;
+  z-index: 3;
 }
 
 .nav__links {
