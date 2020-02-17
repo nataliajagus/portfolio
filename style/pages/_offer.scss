@@ -22,7 +22,8 @@
         }
     
         img {
-            margin-bottom: 20px;
+            margin: 0 auto 30px;
+            max-width: 300px;
         }
     }
     
@@ -34,7 +35,10 @@
             .row {
                 margin: 20px 0;
             }
-
+            
+            img {
+                max-width: 100%;
+            }
         }
         
     }

@@ -4,7 +4,16 @@
     background: #42D091;
 
     .top:after {
-        background: url('../assets/green-overlay.svg');
-        height: 132px;
+        content: '';
+        width: 100vw;
+        height: 117px;
+        background: url(../assets/green-overlay.svg);
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
     }
 }
+
