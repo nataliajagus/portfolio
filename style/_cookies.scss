@@ -1,0 +1,139 @@
+@keyframes slideIn {
+    from { bottom: -4000px;}
+    to { bottom: 20px }
+  }
+
+  @keyframes slideOut {
+    from { bottom: 20px;}
+    to { bottom: -4000px }
+  }
+
+  @keyframes slideInDesktop {
+    from { right: -4000px;}
+    to { right: 40px }
+  }
+
+  @keyframes slideOutDesktop {
+    from { right: 40px;}
+    to { right: -4000px; }
+  }
+
+.cookies {
+    width: 90%;
+    background: #fff;
+    bottom: -4000px;
+    position: fixed;
+    padding: 20px;
+    box-shadow:  6px 8px 20px #3a393921;
+    z-index: 20000;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        max-width: 100px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    a {
+        color: $green;
+        font-size: 0.8em;
+    }
+    
+    button {
+        cursor: pointer;
+        margin: 10px;
+    }
+
+}
+
+.cookies-close {
+    animation-name: slideOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .cookies {
+        width: 519px;
+        bottom: 40px;
+        right: -4000px;
+        text-align: left;
+        display: block;
+        height: 115px;
+        -webkit-transform: none;
+        transform: none;
+        left: auto;
+        -webkit-animation-name: slideInDesktop;
+        animation-name: slideInDesktop;
+
+
+        img {
+            position: absolute;
+            max-width: 150px;
+            bottom: 10px;
+            right: -27px;
+        }
+    
+        h2 {
+            font-size: 1.2em;
+        }
+    
+        p {
+            font-size: 0.8em;
+            margin: 0;
+        }
+
+        button {
+            margin: 5px 0;
+        }
+
+    }
+
+    .cookies-close {
+        right: 40px;
+        animation-name: slideOutDesktop;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.cookies-info {
+
+    display: block !important;
+    p, li {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    ul {
+        margin-left: 30px;
+        font-size: 1.2rem;
+    }
+
+
+   
+}

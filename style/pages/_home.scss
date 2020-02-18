@@ -244,3 +244,18 @@
         width: 100%;
     }
 }
+
+.index-portfolio {
+
+    .col-3 {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        transition: 0.2s ease-in all;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+}

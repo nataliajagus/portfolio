@@ -352,6 +352,7 @@ nav {
 }
 
 body {
+  position: relative;
   margin: 0;
 }
 
@@ -737,6 +738,25 @@ button:focus {
   width: 100%;
 }
 
+.index-portfolio .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index-portfolio img {
+  -webkit-transition: 0.2s ease-in all;
+  transition: 0.2s ease-in all;
+}
+
+.index-portfolio img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .subpage .top {
   height: 250px;
 }
@@ -1010,6 +1030,208 @@ button:focus {
   position: absolute;
   bottom: 0;
   z-index: 2;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -4000px;
+  }
+  to {
+    bottom: 20px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -4000px;
+  }
+  to {
+    bottom: 20px;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  from {
+    bottom: 20px;
+  }
+  to {
+    bottom: -4000px;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    bottom: 20px;
+  }
+  to {
+    bottom: -4000px;
+  }
+}
+
+@-webkit-keyframes slideInDesktop {
+  from {
+    right: -4000px;
+  }
+  to {
+    right: 40px;
+  }
+}
+
+@keyframes slideInDesktop {
+  from {
+    right: -4000px;
+  }
+  to {
+    right: 40px;
+  }
+}
+
+@-webkit-keyframes slideOutDesktop {
+  from {
+    right: 40px;
+  }
+  to {
+    right: -4000px;
+  }
+}
+
+@keyframes slideOutDesktop {
+  from {
+    right: 40px;
+  }
+  to {
+    right: -4000px;
+  }
+}
+
+.cookies {
+  width: 90%;
+  background: #fff;
+  bottom: -4000px;
+  position: fixed;
+  padding: 20px;
+  -webkit-box-shadow: 6px 8px 20px #3a393921;
+          box-shadow: 6px 8px 20px #3a393921;
+  z-index: 20000;
+  border-radius: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cookies img {
+  max-width: 100px;
+}
+
+.cookies h2 {
+  font-size: 1.3em;
+}
+
+.cookies p {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.cookies a {
+  color: #42D091;
+  font-size: 0.8em;
+}
+
+.cookies button {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.cookies-close {
+  -webkit-animation-name: slideOut;
+          animation-name: slideOut;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .cookies {
+    width: 519px;
+    bottom: 40px;
+    right: -4000px;
+    text-align: left;
+    display: block;
+    height: 115px;
+    -webkit-transform: none;
+    transform: none;
+    left: auto;
+    -webkit-animation-name: slideInDesktop;
+    animation-name: slideInDesktop;
+  }
+  .cookies img {
+    position: absolute;
+    max-width: 150px;
+    bottom: 10px;
+    right: -27px;
+  }
+  .cookies h2 {
+    font-size: 1.2em;
+  }
+  .cookies p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .cookies button {
+    margin: 5px 0;
+  }
+  .cookies-close {
+    right: 40px;
+    -webkit-animation-name: slideOutDesktop;
+            animation-name: slideOutDesktop;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+.cookies-info {
+  display: block !important;
+}
+
+.cookies-info p, .cookies-info li {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.cookies-info ul {
+  margin-left: 30px;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 360px) {
