@@ -1,6 +1,10 @@
 .about__photo {
     display: flex;
     align-items: center;
+
+    img {
+        max-width: 350px;
+    }
 }
 
 .about__desc {
